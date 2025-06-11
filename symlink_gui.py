@@ -20,10 +20,12 @@ class SymlinkCreator:
         main_frame = ttk.Frame(self.root, padding="10")
         main_frame.pack(fill=tk.BOTH, expand=True)
 
-        source_frame = ttk.LabelFrame(main_frame, text="Source Files", padding="10")
+        source_frame = ttk.LabelFrame(
+            main_frame, text="Source Files", padding="10")
         source_frame.pack(fill=tk.BOTH, expand=True, padx=5, pady=5)
 
-        self.files_listbox = tk.Listbox(source_frame, selectmode=tk.EXTENDED, height=10)
+        self.files_listbox = tk.Listbox(
+            source_frame, selectmode=tk.EXTENDED, height=10)
         self.files_listbox.pack(side=tk.LEFT, fill=tk.BOTH, expand=True)
 
         scrollbar = ttk.Scrollbar(
@@ -50,7 +52,8 @@ class SymlinkCreator:
         )
         clear_files_btn.pack(side=tk.LEFT, padx=5)
 
-        dest_frame = ttk.LabelFrame(main_frame, text="Destination Folder", padding="10")
+        dest_frame = ttk.LabelFrame(
+            main_frame, text="Destination Folder", padding="10")
         dest_frame.pack(fill=tk.X, padx=5, pady=5)
 
         self.dest_entry = ttk.Entry(dest_frame)
@@ -61,7 +64,8 @@ class SymlinkCreator:
         )
         dest_btn.pack(side=tk.RIGHT, padx=5)
 
-        options_frame = ttk.LabelFrame(main_frame, text="Options", padding="10")
+        options_frame = ttk.LabelFrame(
+            main_frame, text="Options", padding="10")
         options_frame.pack(fill=tk.X, padx=5, pady=5)
 
         self.link_type = tk.StringVar(value="symbolic")
@@ -191,7 +195,8 @@ class SymlinkCreator:
         """Create a symbolic link"""
         if platform.system() == "Windows":
             try:
-                os.symlink(source, dest, target_is_directory=os.path.isdir(source))
+                os.symlink(
+                    source, dest, target_is_directory=os.path.isdir(source))
             except OSError as e:
                 if "privilege" in str(e).lower() or "permission" in str(e).lower():
                     raise Exception(
