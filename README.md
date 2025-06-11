@@ -15,7 +15,16 @@ A user-friendly GUI application for creating symbolic and hard links across diff
 
 ## SCRRENSHOTS
 
+<img src="https://github.com/user-attachments/assets/c535affb-bf0a-41bc-8dd5-eebfb88af47c" width="500"/>
+
+<img src="https://github.com/user-attachments/assets/37848be8-2444-44ec-a137-398181d0cae0" width="500"/>
+
+<img src="https://github.com/user-attachments/assets/660cb516-4dcf-452b-bf2b-c68f9d786f36" width="500"/>
+
+
 ![Image](https://github.com/user-attachments/assets/c535affb-bf0a-41bc-8dd5-eebfb88af47c)
+
+![Image](https://github.com/user-attachments/assets/37848be8-2444-44ec-a137-398181d0cae0)
 
 ![Image](https://github.com/user-attachments/assets/660cb516-4dcf-452b-bf2b-c68f9d786f36)
 
